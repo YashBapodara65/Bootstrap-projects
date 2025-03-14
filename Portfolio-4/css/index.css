@@ -1,0 +1,213 @@
+.s1 .row .s1d1 img{
+    height: 85%;
+    width: 85%;
+}
+
+.s1 .row .s1d1 .anc{
+    background: radial-gradient(skyblue,rgb(0, 166, 255));
+}
+
+.s1 .row .s1d1 p{
+    font-size: 19px;
+}
+
+.s3 .row .s3d1, .s3 .row .s3d2, .s3 .row .s3d3, .s3 .row .s3d4, .s3 .row .s3d5, .s3 .row .s3d6{
+    cursor: pointer;
+}
+
+.s3 .row .s3d1 i, .s3 .row .s3d1 h1, .s3 .row .s3d2 i, .s3 .row .s3d2 h1, .s3 .row .s3d3 i, .s3 .row .s3d3 h1, .s3 .row .s3d4 i, .s3 .row .s3d4 h1, .s3 .row .s3d5 i, .s3 .row .s3d5 h1, .s3 .row .s3d5 i, .s3 .row .s3d5 h1, .s3 .row .s3d6 i, .s3 .row .s3d6 h1{
+    transition: 0.3s;
+}
+
+.s3 .row .s3d1:hover i, .s3 .row .s3d1:hover h1, .s3 .row .s3d2:hover i, .s3 .row .s3d2:hover h1, .s3 .row .s3d3:hover i, .s3 .row .s3d3:hover h1, .s3 .row .s3d4:hover i, .s3 .row .s3d4:hover h1, .s3 .row .s3d5:hover i, .s3 .row .s3d5:hover h1, .s3 .row .s3d6:hover i, .s3 .row .s3d6:hover h1{
+    color: blueviolet;
+}
+
+.s4{
+    margin-top: 150px;
+    background-color: #65b8fc;
+}
+
+.s6 .row .s6d1 .all{
+    color: blueviolet;
+}
+
+.s6 .row .s6d1{
+    justify-content: center;
+}
+
+.s7 .row .s7d1 .data, .s7 .row .s7d2 .data, .s7 .row .s7d3 .data, .s7 .row .s7d4 .data, .s7 .row .s7d5 .data, .s7 .row .s7d6 .data{
+    /* background: linear-gradient(rgba(26, 189, 234, 0.5),rgba(26, 189, 234, 0.5)); */
+    width: 77%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.s7 .row .s7d1, .s7 .row .s7d2, .s7 .row .s7d3, .s7 .row .s7d4, .s7 .row .s7d5, .s7 .row .s7d6{
+    cursor: pointer;
+}
+
+.s7 .row .s7d1:hover .data, .s7 .row .s7d2:hover .data, .s7 .row .s7d3:hover .data, .s7 .row .s7d4:hover .data, .s7 .row .s7d5:hover .data, .s7 .row .s7d6:hover .data{
+    opacity: 1;
+}
+
+.s9 .row .s9d1 .slider {
+    width: 100%;
+}
+
+.slick-slide {
+  margin: 0px 0px;
+}
+
+.s9 .row .s9d1 .slider .row .s9d1d1 img{
+    width: 50px;
+    height: 60px;
+}
+
+.s11 .row .s11d1, .s11 .row .s11d2, .s11 .row .s11d3, .s11 .row .s11d4{
+    transition: 0.3s;
+    transform: scale(0.8);
+}
+
+.s11 .row .s11d1 .b1, .s11 .row .s11d2 .b1, .s11 .row .s11d3 .b1, .s11 .row .s11d4 .b1{
+    width: 150px;
+    height: 150px;
+    background-color: #e2e5ff;
+}
+
+.s11 .row .s11d1 .b1 .inb1, .s11 .row .s11d2 .b1 .inb1, .s11 .row .s11d3 .b1 .inb1, .s11 .row .s11d4 .b1 .inb1{
+    width: 100px;
+    height: 100px;
+    background: #edefff;
+}
+
+.s11 .row .s11d1 .hr, .s11 .row .s11d2 .hr, .s11 .row .s11d3 .hr, .s11 .row .s11d4 .hr{
+    background: gray;
+    border: none;
+    height: 2px;
+    margin-top: 20px;
+    width: 90%;
+}
+
+.s11 .row .s11d1 .hr1, .s11 .row .s11d2 .hr1, .s11 .row .s11d3 .hr1, .s11 .row .s11d4 .hr1{
+    background: gray;
+    border: none;
+    height: 2px;
+    margin-top: 0px;
+    width: 90%;
+}
+
+.s11 .row .s11d1 p, .s11 .row .s11d2 p, .s11 .row .s11d3 p, .s11 .row .s11d4 p{
+    margin-top: 10px;
+}
+
+.s11 .row .s11d1 .anc1, .s11 .row .s11d2 .anc1, .s11 .row .s11d3 .anc1, .s11 .row .s11d4 .anc1{
+    width: 90%;
+    background: white;
+    display: none;
+}
+
+.s11 .row .s11d1:hover, .s11 .row .s11d2:hover, .s11 .row .s11d3:hover, .s11 .row .s11d4:hover{
+    cursor: pointer;
+    background: linear-gradient(to right,rgb(25, 156, 212),rgb(69, 176, 222),skyblue,skyblue,rgb(69, 176, 222),rgb(25, 156, 212));
+    transform: scale(0.9);
+}
+
+.s11 .row .s11d1:hover .b1 .inb1, .s11 .row .s11d2:hover .b1 .inb1, .s11 .row .s11d3:hover .b1 .inb1, .s11 .row .s11d4:hover .b1 .inb1{
+    background: linear-gradient(to right,rgb(25, 156, 212),rgb(69, 176, 222),skyblue,skyblue,rgb(69, 176, 222),rgb(25, 156, 212));
+}
+
+.s11 .row .s11d1:hover .b1 .inb1 h1, .s11 .row .s11d1:hover h2, .s11 .row .s11d1:hover p, .s11 .row .s11d2:hover .b1 .inb1 h1, .s11 .row .s11d2:hover h2, .s11 .row .s11d2:hover p, .s11 .row .s11d3:hover .b1 .inb1 h1, .s11 .row .s11d3:hover h2, .s11 .row .s11d3:hover p, .s11 .row .s11d4:hover .b1 .inb1 h1, .s11 .row .s11d4:hover h2, .s11 .row .s11d4:hover p{
+    color: white;
+}
+
+.s11 .row .s11d1:hover .hr, .s11 .row .s11d1:hover .hr1, .s11 .row .s11d2:hover .hr, .s11 .row .s11d2:hover .hr1, .s11 .row .s11d3:hover .hr, .s11 .row .s11d3:hover .hr1, .s11 .row .s11d4:hover .hr, .s11 .row .s11d4:hover .hr1{
+    background: white;
+    color: white;
+}
+
+.s11 .row .s11d1:hover h4, .s11 .row .s11d2:hover h4, .s11 .row .s11d3:hover h4, .s11 .row .s11d4:hover h4{
+    display: none;
+}
+
+.s11 .row .s11d1:hover .anc1, .s11 .row .s11d2:hover .anc1, .s11 .row .s11d3:hover .anc1, .s11 .row .s11d4:hover .anc1{
+    display: block;
+}
+
+.s12 .s12d1 hr, .s12 .s12d2 hr, .s12 .s12d3 hr{
+    height: 2px;
+    background: gray;
+    border: none;
+}
+
+.s12 .s12d1, .s12 .s12d2, .s12 .s12d3{
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+.s12 .s12d1 .img, .s12 .s12d2 .img, .s12 .s12d3 .img{
+    transition: 0.3s;
+}
+
+.s12 .s12d1:hover, .s12 .s12d2:hover, .s12 .s12d3:hover{
+    cursor: pointer;
+}
+
+.s12 .s12d1 .img, .s12 .s12d2 .img, .s12 .s12d3 .img{
+    transition: 0.3s;
+}
+
+.s12 .s12d1:hover .img, .s12 .s12d2:hover .img, .s12 .s12d3:hover .img{
+    transform: scale(1.1);
+}
+
+.s12 .s12d1 .h1, .s12 .s12d2 .h1, .s12 .s12d3 .h1{
+    transition: 0.3s;
+}
+
+.s12 .s12d1:hover .h1, .s12 .s12d2:hover .h1, .s12 .s12d3:hover .h1{
+    color: blueviolet;
+}
+
+.s13{
+    background-color: #65b8fc;
+}
+
+footer{
+    background-color: #04091e;
+}
+
+footer .f1 .icons i{
+    color: white;
+}
+
+footer .f1 p{
+    color: rgb(178, 178, 178);
+}
+
+footer .f1 .icons i:hover{
+    color: blueviolet;
+}
+
+.s1, .s2, .s5, .s8, .s10, .s13{
+    margin-top: 150px;
+}
+
+@media(max-width:768px){
+    .s1 .row .s1d1 p{
+        font-size: 16px;
+    }
+}
+
+@media(max-width:480px){
+
+    .s6 .row .s6d1{
+        justify-content: space-evenly;
+    }
+
+    .s6 .row .s6d1 button{
+        font-size: 12px;
+        padding: 0;
+    }
+}

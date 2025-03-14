@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./css/slick-theme.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      />
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+        integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"
+        integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+
+<body>
+    <header class="bg-white navbar navbar-expand-md">
+        <div class="container">
+            <img src="./images/logo.png" class="navbar-brand" alt="">
+            <!-- <button class="navbar-toggler btn bg-info mt-2 mb-2" type="button" data-bs-toggle="collapse"
+                data-bs-target="#menu"> -->
+            <button class="navbar-toggler btn bg-white border-0 shadow-none mt-2 mb-2" type="button"
+                data-bs-toggle="offcanvas" data-bs-target="#offcanvas1">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav text-center ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">Service</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">Pricing</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Blog
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Pages
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="offcanvas bg-dark offcanvas-start" id="offcanvas1">
+        <div class="offcanvas-header justify-content-end">
+            <button type="button" class="btn btn-dark" data-bs-dismiss="offcanvas">
+                <i class="bi bi-x-lg"></i>
+            </button>
+        </div>
+        <div class="offcanvas-body mt-5 pt-5">
+            <ul class="d-flex flex-column justify-content-evenly">
+                <li class="d-block mt-2"><a href="" class="text-light text-decoration-none fs-5">Home</a></li>
+                <li class="d-block mt-2"><a href="" class="text-light text-decoration-none fs-5">About</a></li>
+                <li class="d-block mt-2">
+                    <a href="" class="text-light text-decoration-none fs-5">Service</a>
+                </li>
+                <li class="d-block mt-2">
+                    <a href="" class="text-light text-decoration-none fs-5">Portfolio</a>
+                </li>
+                <li class="d-block mt-2">
+                    <a href="" class="text-light text-decoration-none fs-5">Pricing</a>
+                </li>
+                <li class="d-block mt-2 dropdown">
+                    <a href="" class="text-light text-decoration-none fs-5 dropdown-toggle" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Blog Home</a></li>
+                        <li><a class="dropdown-item" href="#">Blog Single</a></li>
+                    </ul>
+                </li>
+                <li class="d-block mt-2 dropdown">
+                    <a href="" class="text-light text-decoration-none fs-5 dropdown-toggle" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Elements</a></li>
+                        <li><a class="dropdown-item" href="#">Level 2</a></li>
+                    </ul>
+                </li>
+                <li class="d-block mt-2"><a href="" class="text-light text-decoration-none fs-5">Contact us</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="s1 d-flex justify-content-center align-items-center wow animate__animated animate__zoomIn" data-wow-delay="0s" style="background-color: #f9f9ff; margin-top: 0px;">
+        <div class="container">
+
+            <div class="row w-100 d-flex justify-content-evenly align-items-center">
+                <div class="s1d1 col-12 col-md-5 p-4">
+                    <h1 class="fs-6 mt-3">THIS IS ME</h1>
+                    <h2 class="fs-2 mt-4">PHILIP GILBERT</h2>
+                    <p class=" mt-4 mb-4">You will begin to realise why this exercise is called the Dickens Pattern with
+                        reference to the ghost showing Scrooge some different futures.</p>
+                    <a href="" class="anc mt-5 text-light p-2 ps-3 pe-3 text-decoration-none">Discover Now</a>
+                </div>
+                <div class="s1d1 col-12 col-md-6 d-flex justify-content-center align-items-center">
+                    <img src="./images/bg.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="s1 container d-flex justify-content-center align-items-center wow animate__animated animate__zoomIn" data-wow-delay="0s">
+        <div class="row w-100 d-flex justify-content-evenly align-items-center">
+            <div class="s1d1 col-12 col-md-6 d-flex justify-content-center align-items-center">
+                <img src="./images/bg1.png" class="shadow" alt="">
+            </div>
+            <div class="s1d1 col-12 col-md-5 p-4">
+                <h1 class="fs-6 mt-0">ABOUT ME</h1>
+                <h2 class="fs-2 mt-4">PERSONAL DETAILS</h2>
+                <p class=" mt-4 mb-4">Here, I focus on a range of items and features that we use in life without giving
+                    them a second thought. such as Coca Cola. Dolor sit amet, consectetur adipisicing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco.</p>
+                <a href="" class="anc mt-5 text-light p-2 ps-3 pe-3 text-decoration-none">View Full Details</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="s2 container wow animate__animated animate__zoomIn" data-wow-delay="0s">
+        <div class="row d-flex flex-column justify-content-center align-items-center">
+            <div class="col-12 mt-5">
+                <h1 class="fs-2 m-0 text-center">My Offered Services</h1>
+            </div>
+            <div class="col-12 col-md-8 col-lg-6 mt-4 mb-5">
+                <p class="m-0 fs-6 text-center">At about this time of year, some months after New Year’s resolutions
+                    have been made and kept, or made and neglected.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="s3 container mt-4">
+        <div class="row">
+            <div
+                class="s3d1 col-12 col-sm-6 col-lg-4 mt-4 pt-4 d-flex flex-column justify-content-evenly align-items-center wow animate__animated animate__zoomIn" data-wow-delay="0s">
+                <i class="bi bi-pie-chart display-6"></i>
+                <h1 class="fs-4 mt-3">Web Design</h1>
+                <p style="font-size: 18px;" class="mt-3 text-center"><q>It is not because things are difficult that we
+                        do not dare; it is because we do not dare that they are difficult.</q></p>
+            </div>
+            <div
+                class="s3d2 col-12 col-sm-6 col-lg-4 mt-4 pt-4 d-flex flex-column justify-content-evenly align-items-center wow animate__animated animate__zoomIn" data-wow-delay="0.5s">
+                <i class="display-6 bi bi-laptop"></i>
+                <h1 class="fs-4 mt-3">Web Development</h1>
+                <p style="font-size: 18px;" class="mt-3 text-center"><q>It is not because things are difficult that we
+                        do not dare; it is because we do not dare that they are difficult.</q></p>
+            </div>
+            <div
+                class="s3d3 col-12 col-sm-6 col-lg-4 mt-4 pt-4 d-flex flex-column justify-content-evenly align-items-center wow animate__animated animate__zoomIn" data-wow-delay="1s">
+                <i class="display-6 bi bi-camera"></i>
+                <h1 class="fs-4 mt-3">Photography</h1>
+                <p style="font-size: 18px;" class="mt-3 text-center"><q>It is not because things are difficult that we
+                        do not dare; it is because we do not dare that they are difficult.</q></p>
+            </div>
+            <div
+                class="s3d4 col-12 col-sm-6 col-lg-4 mt-4 pt-4 d-flex flex-column justify-content-evenly align-items-center wow animate__animated animate__zoomIn" data-wow-delay="1.3s">
+                <i class="display-6 bi bi-image"></i>
+                <h1 class="fs-4 mt-3">Clipping Path</h1>
+                <p style="font-size: 18px;" class="mt-3 text-center"><q>It is not because things are difficult that we
+                        do not dare; it is because we do not dare that they are difficult.</q></p>
+            </div>
+            <div
+                class="s3d5 col-12 col-sm-6 col-lg-4 mt-4 pt-4 d-flex flex-column justify-content-evenly align-items-center wow animate__animated animate__zoomIn" data-wow-delay="1.6s">
+                <i class="display-6 bi bi-globe"></i>
+                <h1 class="fs-4 mt-3">Apps Interface</h1>
+                <p style="font-size: 18px;" class="mt-3 text-center"><q>It is not because things are difficult that we
+                        do not dare; it is because we do not dare that they are difficult.</q></p>
+            </div>
+            <div
+                class="s3d6 col-12 col-sm-6 col-lg-4 mt-4 pt-4 d-flex flex-column justify-content-evenly align-items-center wow animate__animated animate__zoomIn" data-wow-delay="1.9s">
+                <i class="display-6 bi bi-bounding-box"></i>
+                <h1 class="fs-4 mt-3">Graphic Design</h1>
+                <p style="font-size: 18px;" class="mt-3 text-center"><q>It is not because things are difficult that we
+                        do not dare; it is because we do not dare that they are difficult.</q></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="s4 border">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 col-sm-6 col-lg-3 mt-5 d-flex flex-column justify-content-evenly align-items-center wow animate__animated animate__zoomIn" data-wow-delay="0s">
+                    <h1 class="fs-2 fw-bold text-light counter">2536</h1>
+                    <h2 class="fs-5 text-light">Projects Completed</h2>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 mt-5 d-flex flex-column justify-content-evenly align-items-center wow animate__animated animate__zoomIn" data-wow-delay="0s">
+                    <h1 class="fs-2 fw-bold text-light counter">6784</h1>
+                    <h2 class="fs-5 text-light">Happy Clients</h2>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 mt-5 d-flex flex-column justify-content-evenly align-items-center wow animate__animated animate__zoomIn" data-wow-delay="0s">
+                    <h1 class="fs-2 fw-bold text-light counter">2239</h1>
+                    <h2 class="fs-5 text-light">Cups of Coffee</h2>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 mt-5 d-flex flex-column justify-content-evenly align-items-center wow animate__animated animate__zoomIn" data-wow-delay="0s">
+                    <h1 class="fs-2 fw-bold text-light counter">434</h1>
+                    <h2 class="fs-5 text-light">Real Professionals</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="s5 container wow animate__animated animate__zoomIn" data-wow-delay="0s">
+        <div class="row d-flex flex-column justify-content-center align-items-center">
+            <div class="col-12 mt-5">
+                <h1 class="fs-2 m-0 text-center">Our Latest Featured Projects</h1>
+            </div>
+            <div class="col-12 col-md-8 col-lg-6 mt-4 mb-5">
+                <p class="m-0 fs-6 text-center">Who are in extremely love with eco friendly system.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="s6 mt-3 container wow animate__animated animate__zoomIn" data-wow-delay="0s">
+        <div class="row d-flex flex-column justify-content-center align-items-center">
+            <div class="s6d1 col-12 mt-5 mb-4 d-flex align-items-center">
+                <button type="button" class="btn all fw-bold">All</button>
+                <button type="button" class="btn fw-bold">Vector</button>
+                <button type="button" class="btn fw-bold">Raster</button>
+                <button type="button" class="btn fw-bold">UI/UX</button>
+                <button type="button" class="btn fw-bold">Printing</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="s7 container mt-3">
+        <div class="row">
+            <div
+                class="s7d1 col-12 mt-5 col-sm-6 col-lg-4 d-flex flex-column justify-content-evenly align-items-center position-relative wow animate__animated animate__zoomIn" data-wow-delay="0s">
+                <img src="./images/c1.jpg" class="img-fluid" alt="">
+                <h1 class="fs-5 mt-3">2D Vinyl Design</h1>
+                <h2 class="fs-6 text-secondary">Vector</h2>
+                <div class="data position-absolute d-flex justify-content-center align-items-center">
+                    <a href="D:\red & white\classes\website\5. Bootstrap\Portfolio-5\images\c1.jpg"><img src="./images/cam.png" alt=""></a>
+                </div>
+            </div>
+            <div
+                class="s7d2 col-12 mt-5 col-sm-6 col-lg-4 d-flex flex-column justify-content-evenly align-items-center position-relative wow animate__animated animate__zoomIn" data-wow-delay="0.5s">
+                <img src="./images/c2.jpg" class="img-fluid" alt="">
+                <h1 class="fs-5 mt-3">2D Vinyl Design</h1>
+                <h2 class="fs-6 text-secondary">Vector</h2>
+                <div class="data position-absolute d-flex justify-content-center align-items-center">
+                    <a href="D:\red & white\classes\website\5. Bootstrap\Portfolio-5\images\c2.jpg"><img src="./images/cam.png" alt=""></a>
+                </div>
+            </div>
+            <div
+                class="s7d3 col-12 mt-5 col-sm-6 col-lg-4 d-flex flex-column justify-content-evenly align-items-center position-relative wow animate__animated animate__zoomIn" data-wow-delay="1s">
+                <img src="./images/c3.jpg" class="img-fluid" alt="">
+                <h1 class="fs-5 mt-3">Creative Poster Design</h1>
+                <h2 class="fs-6 text-secondary">Agency</h2>
+                <div class="data position-absolute d-flex justify-content-center align-items-center">
+                    <a href="D:\red & white\classes\website\5. Bootstrap\Portfolio-5\images\c3.jpg">
+                    <img src="./images/cam.png" alt=""></a>
+                </div>
+            </div>
+            <div
+                class="s7d4 col-12 mt-5 col-sm-6 col-lg-4 d-flex flex-column justify-content-evenly align-items-center position-relative wow animate__animated animate__zoomIn" data-wow-delay="1.4s">
+                <img src="./images/c4.jpg" class="img-fluid" alt="">
+                <h1 class="fs-5 mt-3">Embosed Logo Design</h1>
+                <h2 class="fs-6 text-secondary">Portal</h2>
+                <div class="data position-absolute d-flex justify-content-center align-items-center">
+                    <a href="D:\red & white\classes\website\5. Bootstrap\Portfolio-5\images\c4.jpg">
+                    <img src="./images/cam.png" alt=""></a>
+                </div>
+            </div>
+            <div
+                class="s7d5 col-12 mt-5 col-sm-6 col-lg-4 d-flex flex-column justify-content-evenly align-items-center position-relative wow animate__animated animate__zoomIn" data-wow-delay="1.8s">
+                <img src="./images/c5.jpg" class="img-fluid" alt="">
+                <h1 class="fs-5 mt-3">3D Helmet Design</h1>
+                <h2 class="fs-6 text-secondary">Vector</h2>
+                <div class="data position-absolute d-flex justify-content-center align-items-center">
+                    <a href="D:\red & white\classes\website\5. Bootstrap\Portfolio-5\images\c5.jpg">
+                    <img src="./images/cam.png" alt=""></a>
+                </div>
+            </div>
+            <div
+                class="s7d6 col-12 mt-5 col-sm-6 col-lg-4 d-flex flex-column justify-content-evenly align-items-center position-relative wow animate__animated animate__zoomIn" data-wow-delay="2.2s">
+                <img src="./images/c6.jpg" class="img-fluid" alt="">
+                <h1 class="fs-5 mt-3">2D Vinyl Design</h1>
+                <h2 class="fs-6 text-secondary">Raster</h2>
+                <div class="data position-absolute d-flex justify-content-center align-items-center">
+                    <a href="D:\red & white\classes\website\5. Bootstrap\Portfolio-5\images\c6.jpg">
+                    <img src="./images/cam.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="s8 w-100 wow animate__animated animate__zoomIn" data-wow-delay="0s" style="background-color: #f9f9ff;">
+        <div class="row d-flex flex-column w-100 justify-content-center align-items-center m-0">
+            <div class="col-12 mt-5">
+                <h1 class="fs-2 m-0 text-center">Client's Feedback About Me</h1>
+            </div>
+            <div class="col-12 col-md-8 col-lg-6 mt-4 mb-5 p-0">
+                <p class="m-0 fs-6 text-center">It is very easy to start smoking but it is an uphill task to quit it.
+                    Ask any chain smoker or even a person.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="s9" style="background-color: #f9f9ff;">
+        <div class="container">
+            <div class="row">
+                <div class="s9d1 col-12 w-100 d-flex justify-content-center align-items-center p-0 wow animate__animated animate__zoomIn" data-wow-delay="0s">
+                    <section class="regular slider w-100">
+                    <div class="row w-100 d-flex justify-content-evenly m-0">
+                        <div class="s9d1d1 col-12 col-sm-2 d-flex pt-3">
+                            <img src="./images/p1.png" alt="">
+                        </div>
+                        <div class="col-12 col-sm-10 pt-3">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit vel, consequatur voluptates
+                                cumque aut tempore optio, magni iste illo ipsum laudantium ducimus amet aliquid quae!
+                            </p>
+                            <h1 class="fs-5 fw-bold">Carolyn Craig</h1>
+                            <h2 class="fs-6 text-secondary">CEO at Google</h2>
+                        </div>
+                    </div>
+                    <div class="row w-100 d-flex justify-content-evenly m-0">
+                        <div class="s9d1d1 col-12 col-sm-2 d-flex pt-3">
+                            <img src="./images/p2.png" alt="">
+                        </div>
+                        <div class="col-12 col-sm-10 pt-3">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit vel, consequatur voluptates
+                                cumque aut tempore optio, magni iste illo ipsum laudantium ducimus amet aliquid quae!
+                            </p>
+                            <h1 class="fs-5 fw-bold">Harriet Maxwell</h1>
+                            <h2 class="fs-6 text-secondary">CEO at Facebook</h2>
+                        </div>
+                    </div>
+                    <div class="row w-100 d-flex justify-content-evenly m-0">
+                        <div class="s9d1d1 col-12 col-sm-2 d-flex pt-3">
+                            <img src="./images/p2.png" alt="">
+                        </div>
+                        <div class="col-12 col-sm-10 pt-3">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit vel, consequatur voluptates
+                                cumque aut tempore optio, magni iste illo ipsum laudantium ducimus amet aliquid quae!
+                            </p>
+                            <h1 class="fs-5 fw-bold">Harriet Maxwell</h1>
+                            <h2 class="fs-6 text-secondary">CEO at Facebook</h2>
+                        </div>
+                    </div>
+                    <div class="row w-100 d-flex justify-content-evenly m-0">
+                        <div class="s9d1d1 col-12 col-sm-2 d-flex pt-3">
+                            <img src="./images/p1.png" alt="">
+                        </div>
+                        <div class="col-12 col-sm-10 pt-3">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit vel, consequatur voluptates
+                                cumque aut tempore optio, magni iste illo ipsum laudantium ducimus amet aliquid quae!
+                            </p>
+                            <h1 class="fs-5 fw-bold">Carolyn Craig</h1>
+                            <h2 class="fs-6 text-secondary">CEO at Google</h2>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <section class="s10 container wow animate__animated animate__zoomIn" data-wow-delay="0s">
+        <div class="row d-flex flex-column justify-content-center align-items-center">
+            <div class="col-12 mt-5">
+                <h1 class="fs-2 m-0 text-center">Choose Your Plan</h1>
+            </div>
+            <div class="col-12 col-md-8 col-lg-6 mt-4 mb-5">
+                <p class="m-0 fs-6 text-center">When someone does something that they know that they shouldn’t do, did
+                    they.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="s11 container mt-2">
+        <div class="row m-0 w-100">
+            <div
+                class="s11d1 col-12 col-md-6 col-xl-3 border border-3 border-secondary d-flex flex-column justify-content-evenly align-items-center mt-0 mb-0 pt-4 pb-4 wow animate__animated animate__flipInY" data-wow-delay="0s">
+                <div class="b1 p-4 rounded-circle">
+                    <div class="inb1 p-3 rounded-circle d-flex justify-content-center align-items-center">
+                        <h1 class="m-0">01</h1>
+                    </div>
+                </div>
+                <h2 class="fs-5 fw-bold mt-4">Economy</h2>
+                <p class="fs-6">For the individuals</p>
+                <hr class="hr mb-0">
+                <p class="fs-6">Secure Online Transfer</p>
+                <hr class="hr1 mb-0">
+                <p class="fs-6">Unlimited Styles for interface</p>
+                <hr class="hr1 mb-0">
+                <p class="fs-6">Reliable Customer Service</p>
+                <hr class="hr1 mb-0">
+
+                <h4 class="fw-bold fs-3 mt-4">&#163;199.00</h4>
+                <a href="" class="anc1 pt-2 pb-2 text-center text-dark text-decoration-none fw-bold mt-4">Buy Now</a>
+            </div>
+            <div
+                class="s11d2 col-12 col-md-6 col-xl-3 border border-3 border-secondary d-flex flex-column justify-content-evenly align-items-center mt-0 mb-0 pt-4 pb-4 wow animate__animated animate__flipInY" data-wow-delay="0.5s">
+                <div class="b1 p-4 rounded-circle">
+                    <div class="inb1 p-3 rounded-circle d-flex justify-content-center align-items-center">
+                        <h1 class="m-0">02</h1>
+                    </div>
+                </div>
+                <h2 class="fs-5 fw-bold mt-4">Business</h2>
+                <p class="fs-6">For the individuals</p>
+                <hr class="hr mb-0">
+                <p class="fs-6">Secure Online Transfer</p>
+                <hr class="hr1 mb-0">
+                <p class="fs-6">Unlimited Styles for interface</p>
+                <hr class="hr1 mb-0">
+                <p class="fs-6">Reliable Customer Service</p>
+                <hr class="hr1 mb-0">
+
+                <h4 class="fw-bold fs-3 mt-4">&#163;299.00</h4>
+                <a href="" class="anc1 pt-2 pb-2 text-center text-dark text-decoration-none fw-bold mt-4">Buy Now</a>
+            </div>
+            <div
+                class="s11d3 col-12 col-md-6 col-xl-3 border border-3 border-secondary d-flex flex-column justify-content-evenly align-items-center mt-0 mb-0 pt-4 pb-4 wow animate__animated animate__flipInY" data-wow-delay="1s">
+                <div class="b1 p-4 rounded-circle">
+                    <div class="inb1 p-3 rounded-circle d-flex justify-content-center align-items-center">
+                        <h1 class="m-0">03</h1>
+                    </div>
+                </div>
+                <h2 class="fs-5 fw-bold mt-4">Premium</h2>
+                <p class="fs-6">For the individuals</p>
+                <hr class="hr mb-0">
+                <p class="fs-6">Secure Online Transfer</p>
+                <hr class="hr1 mb-0">
+                <p class="fs-6">Unlimited Styles for interface</p>
+                <hr class="hr1 mb-0">
+                <p class="fs-6">Reliable Customer Service</p>
+                <hr class="hr1 mb-0">
+
+                <h4 class="fw-bold fs-3 mt-4">&#163;399.00</h4>
+                <a href="" class="anc1 pt-2 pb-2 text-center text-dark text-decoration-none fw-bold mt-4">Buy Now</a>
+            </div>
+            <div
+                class="s11d4 col-12 col-md-6 col-xl-3 border border-3 border-secondary d-flex flex-column justify-content-evenly align-items-center mt-0 mb-0 pt-4 pb-4 wow animate__animated animate__flipInY" data-wow-delay="1.5s">
+                <div class="b1 p-4 rounded-circle">
+                    <div class="inb1 p-3 rounded-circle d-flex justify-content-center align-items-center">
+                        <h1 class="m-0">04</h1>
+                    </div>
+                </div>
+                <h2 class="fs-5 fw-bold mt-4">Exclusive</h2>
+                <p class="fs-6">For the individuals</p>
+                <hr class="hr mb-0">
+                <p class="fs-6">Secure Online Transfer</p>
+                <hr class="hr1 mb-0">
+                <p class="fs-6">Unlimited Styles for interface</p>
+                <hr class="hr1 mb-0">
+                <p class="fs-6">Reliable Customer Service</p>
+                <hr class="hr1 mb-0">
+
+                <h4 class="fw-bold fs-3 mt-4">&#163;499.00</h4>
+                <a href="" class="anc1 pt-2 pb-2 text-center text-dark text-decoration-none fw-bold mt-4">Buy Now</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="s10 container wow animate__animated animate__zoomIn" data-wow-delay="0s">
+        <div class="row d-flex flex-column justify-content-center align-items-center">
+            <div class="col-12 mt-5">
+                <h1 class="fs-2 m-0 text-center">Latest Posts From Our Blog</h1>
+            </div>
+            <div class="col-12 col-md-8 col-lg-6 mt-4 mb-5">
+                <p class="m-0 fs-6 text-center">You may be a skillful, effective employer but if you don’t trust your
+                    personnel and the opposite, then the chances of improving and expanding the business</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="s12 container">
+        <div class="row">
+            <div class="s12d1 col-12 col-lg-4 mt-4 wow animate__animated animate__zoomIn" data-wow-delay="0s">
+                <img src="./images/b1.jpg" class="w-100 img" alt="">
+                <div class="detail d-flex justify-content-evenly align-items-center mt-4">
+                    <img src="./images/img.png" alt="">
+                    <h1 class="fs-6 m-0">Mark Wiens</h1>
+                    <p class="fs-6 m-0">13th Dec</p>
+                    <p class="fs-6 m-0"><i class="bi bi-heart"></i> 15</p>
+                    <p class="fs-6 m-0"><i class="bi bi-chat"></i> 04</p>
+                </div>
+                <hr class="w-100">
+                <a href="" class="fs-4 mt-4 h1 text-decoration-none">Break Through Self Doubt And Fear</a>
+                <p class="fs-5 mt-3">Dream interpretation has many forms; it can be done be done for the sake of fun,
+                    hobby or can be taken up as a serious career.</p>
+            </div>
+            <div class="s12d2 col-12 col-lg-4 mt-4 wow animate__animated animate__zoomIn" data-wow-delay="0.5s">
+                <img src="./images/b2.jpg" class="w-100 img" alt="">
+                <div class="detail d-flex justify-content-evenly align-items-center mt-4">
+                    <img src="./images/img.png" alt="">
+                    <h1 class="fs-6 m-0">Mark Wiens</h1>
+                    <p class="fs-6 m-0">13th Dec</p>
+                    <p class="fs-6 m-0"><i class="bi bi-heart"></i> 15</p>
+                    <p class="fs-6 m-0"><i class="bi bi-chat"></i> 04</p>
+                </div>
+                <hr class="w-100">
+                <a href="" class="fs-4 mt-4 h1 text-decoration-none">Portable Fashion For Young Women</a>
+                <p class="fs-5 mt-3">You may be a skillful, effective employer but if you don’t trust your personnel and
+                    the opposite, then the chances of improving.</p>
+            </div>
+            <div class="s12d3 col-12 col-lg-4 mt-4 wow animate__animated animate__zoomIn" data-wow-delay="1s">
+                <img src="./images/b3.jpg" class="w-100 img" alt="">
+                <div class="detail d-flex justify-content-evenly align-items-center mt-4">
+                    <img src="./images/img.png" alt="">
+                    <h1 class="fs-6 m-0">Mark Wiens</h1>
+                    <p class="fs-6 m-0">13th Dec</p>
+                    <p class="fs-6 m-0"><i class="bi bi-heart"></i> 15</p>
+                    <p class="fs-6 m-0"><i class="bi bi-chat"></i> 04</p>
+                </div>
+                <hr class="w-100">
+                <a href="" class="fs-4 mt-4 h1 text-decoration-none">Do Dreams Serve As A Premonition</a>
+                <p class="fs-5 mt-3">So many of us are demotivated to achieve anything. Such people are not enthusiastic
+                    about anything. They don’t want to work involved.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="s13 d-flex justify-content-center align-items-center">
+        <div class="row d-flex justify-content-center align-items-center w-100">
+            <div class="col-10 mt-5 mb-5 pt-3">
+                <section class="regular1 slider w-100">
+                    <div class="row w-100 d-flex justify-content-evenly m-0">
+                        <div class="s9d1d1 col-12 d-flex justify-content-center align-items-center">
+                            <img src="./images/l1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="row w-100 d-flex justify-content-evenly m-0">
+                        <div class="s9d1d1 col-12 d-flex justify-content-center align-items-center">
+                            <img src="./images/l2.png" alt="">
+                        </div>
+                    </div>
+                    <div class="row w-100 d-flex justify-content-evenly m-0">
+                        <div class="s9d1d1 col-12 d-flex justify-content-center align-items-center">
+                            <img src="./images/l3.png" alt="">
+                        </div>
+                    </div>
+                    <div class="row w-100 d-flex justify-content-evenly m-0">
+                        <div class="s9d1d1 col-12 d-flex justify-content-center align-items-center">
+                            <img src="./images/l4.png" alt="">
+                        </div>
+                    </div>
+                    <div class="row w-100 d-flex justify-content-evenly m-0">
+                        <div class="s9d1d1 col-12 d-flex justify-content-center align-items-center">
+                            <img src="./images/l5.png" alt="">
+                        </div>
+                    </div>
+                    <div class="row w-100 d-flex justify-content-evenly m-0">
+                        <div class="s9d1d1 col-12 d-flex justify-content-center align-items-center">
+                            <img src="./images/l1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="row w-100 d-flex justify-content-evenly m-0">
+                        <div class="s9d1d1 col-12 d-flex justify-content-center align-items-center">
+                            <img src="./images/l2.png" alt="">
+                        </div>
+                    </div>
+                    <div class="row w-100 d-flex justify-content-evenly m-0">
+                        <div class="s9d1d1 col-12 d-flex justify-content-center align-items-center">
+                            <img src="./images/l3.png" alt="">
+                        </div>
+                    </div>
+                    <div class="row w-100 d-flex justify-content-evenly m-0">
+                        <div class="s9d1d1 col-12 d-flex justify-content-center align-items-center">
+                            <img src="./images/l4.png" alt="">
+                        </div>
+                    </div>
+                    <div class="row w-100 d-flex justify-content-evenly m-0">
+                        <div class="s9d1d1 col-12 d-flex justify-content-center align-items-center">
+                            <img src="./images/l5.png" alt="">
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </section>
+
+    <footer class="pt-5 pb-5">
+        <div class="container">
+            <div class="row d-flex justify-content-evenly">
+                <div class="f1 mt-4 col-12 col-lg-4 wow animate__animated animate__zoomIn" data-wow-delay="0s">
+                    <h1 class="fs-4 mt-5 text-light">About Me</h1>
+                    <p class="fs-5 mt-4">We have tested a number of registry fix and clean utilities and present our top
+                        3 list on our site for your convenience.</p>
+                    <p class="fs-5 mt-4">Copyright ©2024 All rights reserved | This template is made with &hearts; by
+                        <span>Yash Bapodara</span></p>
+                </div>
+                <div class="f1 mt-4 col-12 col-md-7 col-lg-4 wow animate__animated animate__zoomIn" data-wow-delay="0.5s">
+                    <h1 class="fs-4 mt-5 text-light">Newsletter</h1>
+                    <p class="fs-5 mt-4">Stay updated with our latest trends</p>
+                    <form action="" class="d-flex justify-content-start align-items-center">
+                        <input type="email" placeholder="Enter Email Address"
+                            class="form-control rounded-0 fs-5 w-75 shadow-none">
+                        <button type="button" class="rounded-0 btn fs-5 text-light"
+                            style="background-color: blueviolet;"><i class="bi bi-arrow-right"></i></button>
+                    </form>
+                </div>
+                <div class="f1 mt-4 col-12 col-md-5 col-lg-3 wow animate__animated animate__zoomIn" data-wow-delay="1s">
+                    <h1 class="fs-4 mt-5 text-light">Follow Me</h1>
+                    <p class="fs-5 mt-4">Let us be social</p>
+                    <div class="icons">
+                        <a href=""><i class="fa-brands fs-5 fa-facebook-f"></i></a>
+                        <a href=""><i class="fa-brands ms-3 fs-5 fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands ms-3 fs-5 fa-dribbble"></i></a>
+                        <a href=""><i class="fa-brands ms-3 fs-5 fa-behance"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+<script>
+    $('.counter').counterUp({
+        delay: 10,
+        time: 3000
+    });
+</script>
+<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+<script src="./js/slick.js"></script>
+<script>
+    $(document).on('ready', function () {
+        $(".regular").slick({
+            dots: true,
+            arrows: false,
+            autoplay: true,
+            autoplaySpeed: 1500,
+            infinite: true,
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            responsive: [
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        });
+
+        $(".regular1").slick({
+            dots: true,
+            arrows: false,
+            autoplay: true,
+            autoplaySpeed: 1500,
+            infinite: true,
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            responsive: [
+                {
+                    breakpoint: 1100,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 576,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        });
+    });
+</script>
+
+<script>
+    new WOW().init();
+    </script>
+
+</html>
