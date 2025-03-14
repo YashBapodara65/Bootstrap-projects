@@ -1,0 +1,588 @@
+.s1{
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    background-color: white;
+}
+
+.s1 .s1d1 a h1{
+    color: #0c2b4b;
+}
+
+.bars{
+    display: none;
+}
+
+.s1 .s1d2 ul{
+    list-style: none;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0;
+}
+
+.s1 .s1d2 ul a, .s1 .s1d2 ul .l1 .lst li{
+    color: black;
+    transition: 0.2s;
+}
+
+.s1 .s1d2 ul a:hover, .s1 .s1d2 ul .l1 .lst li:hover{
+    color: white;
+    background-color: orangered;
+}
+
+.s1 .s1d2 a button{
+    color: white;
+    background-color: orangered;
+    border: 3px solid orangered;
+    width: 200px;
+}
+
+.s1 .s1d2 ul .l1 .box ul{
+    width: 250%;
+    position: absolute;
+    top: 150%;
+    right: -150%;
+    padding: 0;
+    visibility: hidden;
+    opacity: 0;
+    background-color: rgb(244, 244, 244);
+}
+
+.s1 .s1d2 ul .l1 .box ul a li{
+    color: black;
+    transition: 0.3s;
+}
+
+.s1 .s1d2 ul .l1 .box ul a:hover li{
+    background-color: rgb(224, 224, 224);
+}
+
+.s1 .s1d2 ul .l1:hover .box ul.innerul{
+    top: 100%;
+    visibility: visible;
+    opacity: 1;
+}
+
+.s1 .s1d2 ul .l1 .box ul.innerul{
+    transition: 0.5s;
+}
+
+.s1 .s1d2 ul a li, .s1 .s1d2 ul .l1 .lst li{
+    padding: 18px 18px 18px 18px;
+} 
+
+.s1 .s1d2 ul .l1 .box ul a li{
+    padding: 0;
+}
+
+.s2{
+    background: linear-gradient(rgba(0, 0, 0, 0.797),rgba(0,0,0,0.797)),url('../image/bg.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.s2 h3{
+    color: orangered;
+}
+
+.s2 h1{
+    color: white;
+}
+
+.s2 form{
+    width: 600px;
+}
+
+.s2 form button{
+    background-color: orangered;
+    border: none;
+    color: white;
+    width: 30%;
+}
+
+.s2 form input{
+    width: 70%;
+}
+
+.s3 .s3d1 .box{
+    background-color: orangered;
+}
+
+.s3 .s3d2 .box i{
+    background-color: orangered;
+    height: 65px;
+    opacity: 1;
+    border-radius: 50%;
+    width: 65px;
+}
+
+.s3 .s3d2 h3, .s4 .s4d1 h3, .s5 h3{
+    color: orangered;
+}
+
+.s3 .s3d2 .box .icon .bg{
+    animation-name: clrs;
+    animation-duration: 1.7s;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    animation-iteration-count: infinite;
+}
+
+.s3 .s3d2 .box .icon{
+    width: 100px;
+    height: 100px;
+}
+
+.s4, .s5, .s7, footer{
+    margin-top: 150px;
+}
+
+.s4{
+    background-color: #f2f2f4;
+}
+
+.s4 .s4d1 .count .c1 h1{
+    color: orangered;
+}
+
+.s4 .s4d2{
+    background-color: orangered;
+}
+
+.s4 .s4d2 form button{
+    color: white;
+    background-color: black;
+    border: 2px solid black;
+}
+
+.s6 .s6d1 .data{
+    background-color: orangered;
+}
+
+.s6 .s6d1 .data h3{
+    color: white;
+}
+
+.s6 .s6d1 a{
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.s6 .s6d1 a:hover{
+    color: black;
+    text-decoration: underline;
+}
+
+.s6 .s6d1{
+    width: 23%;
+}
+
+.s7{
+    background-color: #f2f2f4;
+}
+
+.s7 .s7d2 h3{
+    color: orangered;
+}
+
+.s7 .s7d2 a button{
+    color: white;
+    background-color: orangered;
+    border: none;
+}
+
+.s7 .s7d2 a button:hover{
+    background-color: rgb(212, 58, 2);
+}
+
+.s7 .s7d2 ul{
+    list-style: none;
+}
+
+.s7 .s7d2 ul li .dot{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid orangered;
+}
+
+.s7 .s7d2 ul li .dot .d1{
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: orangered;
+}
+
+.s8 .s8d1{
+    background-color: #f2f2f4;
+    width: 27%;
+}
+
+.s8 .s8d1 h1 sup{
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.s8 .s8d1 h1 span{
+    font-size: 25px;
+    font-weight: normal;
+}
+
+.s8 .s8d1 h3{
+    background: orangered;
+}
+
+.s8 .s8d1 ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.s8 .s8d1 a button{
+    color: white;
+    background-color: orangered;
+    border: none;
+}
+
+.s8 .s8d1 a button:hover{
+    background-color: rgb(212, 58, 2);
+}
+
+.s9 .s9d1, .s9 .s9d2, .s9 .s9d3, .s9 .s9d4{
+    width: 20%;
+}
+
+.s9 .s9d1 .b2, .s9 .s9d2 .b2, .s9 .s9d3 .b2, .s9 .s9d4 .b2{
+    height: 80px;
+}
+
+.s9 .s9d1:hover .b2 .data1, .s9 .s9d2:hover .b2 .data1, .s9 .s9d3:hover .b2 .data1, .s9 .s9d4:hover .b2 .data1{
+    top: -100%;
+}
+
+.s9 .s9d1:hover .b2 .data2, .s9 .s9d2:hover .b2 .data2, .s9 .s9d3:hover .b2 .data2, .s9 .s9d4:hover .b2 .data2{
+    top: 0%;
+}
+
+.s9 .s9d1 .b2 .data1, .s9 .s9d2 .b2 .data1, .s9 .s9d3 .b2 .data1, .s9 .s9d4 .b2 .data1{
+    background-color: #f2f2f4;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    transition: 0.3s;
+    left: 0;
+}
+
+.s9 .s9d1 .b2 .data2, .s9 .s9d2 .b2 .data2, .s9 .s9d3 .b2 .data2, .s9 .s9d4 .b2 .data2{
+    width: 100%;
+    transition: 0.3s;
+    height: 100%;
+    top: 95%;
+    left: 0;
+    background-color: orangered;
+}
+
+.s9 .s9d1 .b2 .data2 i, .s9 .s9d2 .b2 .data2 i, .s9 .s9d3 .b2 .data2 i, .s9 .s9d4 .b2 .data2 i{
+    border: 2px solid black;
+    width: 35px;
+    height: 35px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.s9 .s9d1 .b2 .data2 i:hover, .s9 .s9d2 .b2 .data2 i:hover, .s9 .s9d3 .b2 .data2 i:hover, .s9 .s9d4 .b2 .data2 i:hover{
+    background-color: black;
+    color: white;
+}
+
+.slider {
+    width: 100%;
+}
+
+.slick-slide {
+    margin: 0px 30px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: black;
+}
+
+
+.slick-slide {
+    transition: all ease-in-out .3s;
+    opacity: .3;
+}
+
+.slick-active {
+    opacity: .3;
+}
+
+.slick-current {
+    opacity: 1;
+}
+
+.slider .slid1, .slider .slid2, .slider .slid3, .slider .slid4, .slider .slid5{
+    background-color: #f2f2f4;
+}
+
+.slider .slid1 .data img, .slider .slid2 .data img, .slider .slid3 .data img, .slider .slid4 .data img, .slider .slid5 .data img{
+    width: 70px;
+    height: 70px;
+}
+
+.slider .slid1 .fa-quote-right, .slider .slid2 .fa-quote-right, .slider .slid3 .fa-quote-right, .slider .slid4 .fa-quote-right, .slider .slid5 .fa-quote-right{
+    top: 0;
+    right: 3%;
+    color: orangered;
+}
+
+.s10 .s10d1 .data .b1 img, .s10 .s10d2 .data .b1 img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.s10 .s10d1 .data .b1 h1:hover, .s10 .s10d1 .data .b2 h1:hover, .s10 .s10d2 .data .b1 h1:hover, .s10 .s10d2 .data .b2 h1:hover{
+    text-decoration: underline;
+}
+
+.s10 .s10d1 .data .b2 .fa-bookmark, .s10 .s10d2 .data .b2 .fa-bookmark{
+    color: orangered;
+}
+
+.s10 .s10d1 a button, .s10 .s10d2 a button{
+    border: none;
+    background: transparent;
+    color: orangered;
+    transition: 0.3s;
+}
+
+.s10 .s10d1 a button:hover, .s10 .s10d2 a button:hover{
+    color: black;
+}
+
+.s10 .s10d1 .box, .s10 .s10d2 .box{
+    background-color: #f2f2f4;
+}
+
+.s10 .s10d1 .box .date, .s10 .s10d2 .box .date{
+    background-color: orangered;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    top: -10%;
+    right: 10%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+footer{
+    background-color: #1f1f2e;
+}
+
+footer .f1 .f1d1 h1, footer .f1 .f1d2 h1, footer .f1 .f1d3 h1{
+    color: orangered;
+}
+
+footer .f1 .f1d1 p, footer .f1 .f1d3 p{
+    color: white;
+}
+
+footer .f1 .f1d1 .icons a i{
+    color: white;
+    border: 2px solid white;
+    width: 35px;
+    height: 35px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+footer .f1 .f1d1 .icons a i:hover{
+    background-color: white;
+    color: black;
+}
+
+footer .f1 .f1d2 ul{
+    list-style: none;
+}
+
+footer .f1 .f1d2 ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+footer .f1 .f1d2 ul li a:hover{
+    text-decoration: underline;
+}
+
+footer .f1 .f1d3 form input{
+    width: 75%;
+    border: 1px solid white;
+}
+
+footer .f1 .f1d3 form button{
+    width: 25%;
+    background-color: orangered;
+    color: white;
+    border: 1px solid orangered;
+}
+
+
+
+@keyframes clrs{
+    form{
+        width: 65px;
+        height: 65px;
+    }
+    to{
+        width: 90px;
+        height: 90px;
+        background: linear-gradient(rgba(252, 2, 2, 0.380),rgba(252, 2, 2, 0.380));    
+    }
+}
+
+@media(max-width:1200px)
+{
+    .slick-slide {
+        transition: all ease-in-out .3s;
+        opacity: 1;
+    }
+    
+    .slick-active {
+        opacity: 1;
+    }
+    
+    .slick-current {
+        opacity: 1;
+    }
+}
+
+@media(max-width:992px)
+{
+    .bars{
+        width: 80px;
+        display: block;
+        top: 10px;
+        right: 15px;
+    }
+
+    .s1 .s1d1{
+        width: 180px;
+        margin-bottom: 10px;
+        margin-top: 5px;
+    }
+
+    .s1 .s1d2{
+        width: 100%;
+        display: none;
+    }
+
+    .s1 .s1d2 ul{
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+
+    .s1 .s1d2 ul a, .s1 .s1d2 ul .l1{
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .s1 .s1d2 ul a li, .s1 .s1d2 ul .l1 .lst li{
+        padding: 0;
+    } 
+
+    .s1 .s1d2 a button{
+        display: none;
+    }
+
+    .s1 .s1d2 ul .l1 .box{
+        display: none;
+    }
+
+    .s1 .s1d2 ul .l1 .box ul{
+        width: 100%;
+        position: static;
+        visibility: visible;
+        opacity: 1;
+        background-color: rgb(244, 244, 244);
+        padding-top: 5px;
+        padding-left: 5px;
+        padding-bottom: 5px;
+    }
+
+    .s6 .s6d1{
+        width: 48%;
+    }
+
+    .s8 .s8d1{
+        width: 500px;
+    }
+
+    .s9 .s9d1, .s9 .s9d2, .s9 .s9d3, .s9 .s9d4{
+        width: 45%;
+    }
+
+    footer .f1 .f1d3 form input{
+        width: 70%;
+    }
+    
+    footer .f1 .f1d3 form button{
+        width: 30%;
+    }
+}
+
+@media(max-width:720px)
+{
+    .s8 .s8d1{
+        width: 400px;
+    }
+}
+
+@media(max-width:576px)
+{
+    .s2 form button{
+        width: 35%;
+    }
+    
+    .s2 form input{
+        width: 65%;
+    }
+}
+
+@media(max-width:576px)
+{
+    .s2 form button{
+        min-width: 40%;
+    }
+    
+    .s2 form input{
+        width: 65%;
+    }
+}
+
+@media(max-width:480px)
+{
+    .s6 .s6d1{
+        width: 97%;
+    }
+
+    .s9 .s9d1, .s9 .s9d2, .s9 .s9d3, .s9 .s9d4{
+        width: 90%;
+    }
+}
